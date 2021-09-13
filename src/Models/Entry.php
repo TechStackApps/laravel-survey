@@ -116,7 +116,7 @@ class Entry extends Model
             }
 
             $this->answers->add(Answer::make([
-                'question_id' => substr($key, 1),
+                'question_id' => $key,
                 'entry_id' => $this->id,
                 'value' => $value,
             ]));
